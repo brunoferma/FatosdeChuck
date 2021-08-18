@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red1">#F44336</color>
+    <color name="primaryColor">#ff5722</color>
+    <color name="primaryLightColor">#ff8a50</color>
+    <color name="primaryDarkColor">#c41c00</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_background">#00A2FF</color>
+    <color name="primary_color">#5E5E5E</color>
+    <color name="button_unabled">#1D6F7273</color>
+    <color name="black">#000000</color>
+    <color name="teal_200">#ff8a50</color>
+    <color name="purple_200">#FFFFFFFF</color>
+    <color name="purple_700">#FFFFFFFF</color>
+
+</resources>

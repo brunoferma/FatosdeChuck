@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_back_search_layout"
+    tools:context=".view.activity.SearchActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_textview_marginstart_16dp"
+        android:layout_marginTop="@dimen/search_textview_margintop_16dp"
+        android:layout_marginEnd="@dimen/search_textview_marginend_16dp"
+        android:background="@drawable/shape_info_views"
+        android:padding="@dimen/search_textview_padding_30dp"
+        android:text="@string/title_search_a_fact"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/search_textview_textsize_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_radiogroup_marginstart_16dp"
+        android:layout_marginTop="@dimen/search_radiogroup_margintop_16dp"
+        android:layout_marginEnd="@dimen/search_radiogroup_marginend_16dp"
+        android:background="@drawable/shape_info_views"
+        android:gravity="center"
+        android:padding="@dimen/search_radiogroup_padding_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/search_textview_marginbottom_16dp"
+            android:text="@string/title_what_do_you_prefer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_textview_textsize_24sp" />
+
+        <RadioButton
+            android:id="@+id/radio_random"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primaryLightColor"
+            android:text="@string/action_give_me_a_random_joke"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_radiobutton_textsize_18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_category"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primaryLightColor"
+            android:text="@string/action_i_want_a_random_by_a_category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_radiobutton_textsize_18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_free"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primaryLightColor"
+            android:text="@string/action_let_me_free_to_search"
+            android:textColor="@color/black"
+            android:textSize="@dimen/search_radiobutton_textsize_18sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout_to_write_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_layout_marginstart_16dp"
+        android:layout_marginTop="@dimen/search_layout_margintop_16dp"
+        android:layout_marginEnd="@dimen/search_layout_marginend_16dp"
+        android:background="@drawable/shape_select_view_group"
+        android:orientation="vertical"
+        android:padding="@dimen/search_layout_padding_16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropmenu_category"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_category"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_list_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/search_autocompletetext_marginbottom_16dp"
+                android:contentDescription="@string/required_place_to_select_categories"
+                android:dropDownHeight="@dimen/search_autocompletetext_dropdownheight_180dp"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_search"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:boxStrokeColor="@color/primaryLightColor"
+            app:boxStrokeWidth="1.5dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="120"
+            app:helperTextTextColor="@color/black"
+            app:endIconMode="clear_text"
+            app:counterTextColor="@color/black"
+            app:errorEnabled="true"
+            app:helperTextEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_to_write_msg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_search"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/search_button_margintop_16dp"
+            android:backgroundTint="@color/button_unabled"
+            android:enabled="false"
+            android:padding="@dimen/search_button_padding_16dp"
+            android:text="@string/app_search"
+            android:textSize="@dimen/search_button_textsize_20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

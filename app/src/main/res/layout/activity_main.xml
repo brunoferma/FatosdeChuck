@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_back_search_layout"
+    tools:context=".view.activity.MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper_facts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/view_hello_help"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/main_viewfliper_padding__16dp">
+
+            <TextView
+                android:id="@+id/text_help"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_info_views"
+                android:elevation="@dimen/main_textview_elevation_6dp"
+                android:padding="@dimen/main_textview_padding_10dp"
+                android:text="@string/title_hello_help_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_textview_fontsize_20sp" />
+
+            <ImageView
+                android:id="@+id/welcome_image"
+                android:layout_width="361dp"
+                android:layout_height="476dp"
+                android:layout_marginTop="@dimen/main_imageview_marginb_100dp"
+                android:elevation="10dp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/facts_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/main_recyclerview_margin_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/main_viewfliper_padding__16dp">
+
+            <ImageView
+                android:id="@+id/image_error"
+                android:layout_width="@dimen/main_imageview_width_100dp"
+                android:layout_height="@dimen/main_imageview_heigth_100dp"
+                android:layout_marginBottom="@dimen/main_imageview_marginb_100dp"
+                android:elevation="10dp"
+                android:src="@drawable/ic_baseline_error_50" />
+
+            <TextView
+                android:id="@+id/text_view_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Preview"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_textview_fontsize_20sp" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

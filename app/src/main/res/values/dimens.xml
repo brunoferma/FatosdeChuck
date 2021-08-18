@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--RecyclerView-->
+    <dimen name="main_recyclerview_padding_16dp">16dp</dimen>
+    <dimen name="item_recyclerview_fontsize_28sp">28sp</dimen>
+    <dimen name="item_recyclerview_fontsize_18sp">18sp</dimen>
+
+    <!--Main Activity-->
+    <dimen name="main_textview_fontsize_20sp">20sp</dimen>
+    <dimen name="main_viewfliper_padding__16dp">16dp</dimen>
+    <dimen name="main_imageview_width_100dp">100dp</dimen>
+    <dimen name="main_imageview_heigth_100dp">100dp</dimen>
+    <dimen name="main_imageview_marginb_100dp">100dp</dimen>
+    <dimen name="main_textview_elevation_6dp">6dp</dimen>
+    <dimen name="main_textview_padding_10dp">10dp</dimen>
+    <dimen name="main_recyclerview_margin_16dp">16dp</dimen>
+
+    <!--Search Activity-->
+    <dimen name="search_textview_marginstart_16dp">16dp</dimen>
+    <dimen name="search_textview_margintop_16dp">16dp</dimen>
+    <dimen name="search_textview_marginend_16dp">16dp</dimen>
+    <dimen name="search_textview_marginbottom_16dp">16dp</dimen>
+    <dimen name="search_textview_padding_30dp">30dp</dimen>
+    <dimen name="search_textview_textsize_18sp">18sp</dimen>
+    <dimen name="search_textview_textsize_24sp">24sp</dimen>
+    <dimen name="search_radiogroup_marginstart_16dp">16dp</dimen>
+    <dimen name="search_radiogroup_margintop_16dp">16dp</dimen>
+    <dimen name="search_radiogroup_marginend_16dp">16dp</dimen>
+    <dimen name="search_radiogroup_padding_16dp">16dp</dimen>
+    <dimen name="search_radiobutton_textsize_18sp">18sp</dimen>
+    <dimen name="search_layout_marginstart_16dp">16dp</dimen>
+    <dimen name="search_layout_margintop_16dp">16dp</dimen>
+    <dimen name="search_layout_marginend_16dp">16dp</dimen>
+    <dimen name="search_layout_padding_16dp">16dp</dimen>
+    <dimen name="search_autocompletetext_marginbottom_16dp">16dp</dimen>
+    <dimen name="search_autocompletetext_dropdownheight_180dp">180dp</dimen>
+    <dimen name="search_button_margintop_16dp">16dp</dimen>
+    <dimen name="search_button_padding_16dp">16dp</dimen>
+    <dimen name="search_button_textsize_20dp">20sp</dimen>
+
+    <!--Dropdown-->
+    <dimen name="item_dropdown_textview_padding_16dp">16dp</dimen>
+
+    <!--Layout Facts Details-->
+    <dimen name="item_layout_recyclerview_marginbottom_4dp">4dp</dimen>
+    <dimen name="item_recyclerview_textview_marginstart_16dp">16dp</dimen>
+    <dimen name="item_recyclerview_textview_marginend_16dp">16dp</dimen>
+    <dimen name="item_recyclerview_textview_margintop_16dp">16dp</dimen>
+    <dimen name="item_recyclerview_textview_marginbottom_16dp">16dp</dimen>
+    <dimen name="item_recyclerview_textview_paddingstart_8dp">8dp</dimen>
+    <dimen name="item_recyclerview_textview_paddingend_8dp">8dp</dimen>
+    <dimen name="item_recyclerview_textview_paddingtop_4dp">4dp</dimen>
+    <dimen name="item_recyclerview_textview_paddingbottom_4dp">4dp</dimen>
+    <dimen name="item_recyclerview_imageview_width_32dp">32dp</dimen>
+    <dimen name="item_recyclerview_imageview_height_32dp">32dp</dimen>
+    <dimen name="item_recyclerview_imageview_marginend_16dp">16dp</dimen>
+
+
+</resources>
