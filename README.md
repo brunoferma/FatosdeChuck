@@ -21,3 +21,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Espresso
 - Retrofit
 - Padrão MVVM
+# FatosdeChuck
